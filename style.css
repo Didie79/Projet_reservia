@@ -1,0 +1,53 @@
+        
+     
+     body{
+        margin:0;
+        max-width:767px;
+       
+    }
+    *{box-sizing: border-box;}
+    header{
+        display:flex;     
+        flex-wrap: wrap;        
+        padding:20px;
+        margin:0;
+        
+    }
+    #logo{
+        height:50px;
+        width:100px;
+        order:0;
+    }
+     nav{
+         display:flex;     
+         order:2;            
+    }
+     #inscrire{
+      order:1;
+      
+    }   
+     #logo,#inscrire,nav{
+       margin:auto;
+    }
+     ul a {
+         margin-right: 25px;
+    }
+        
+     /*VERSION TABLET*/
+   
+      @media screen and (min-width: 768px){
+     header {      
+        min-width:600px;        
+        padding-top:10px;       
+        flex-wrap:nowrap;
+        justify-content: space-between;
+     }
+     #inscrire{
+         order:2;
+     }
+
+}
+
+     
+
+     

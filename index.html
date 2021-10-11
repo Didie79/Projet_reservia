@@ -10,41 +10,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Projet Reservia</title>
 </head>
-        <!--BODY-->
+                        <!--BODY-->
 <body>
-   <div id="container">
-        <!---HEADER--->
-     <header class> 
+   <div id="container"> <!--début container-->
+                        <!--HEADER-->
+     <header class="header"> 
         <img id="logo" src="./images/logo/Reservia.svg" alt="logo site reservia">
-        <nav class="menu_header ">       
-            <ul >                                
-                 <a class="lineblue " href="#section_hebergement">Hébergements</a>                          
-                 <a class="slineblue" href="#section_activite">Activités</a>                            
-            </ul>                       
-        </nav>  
-        <div id="inscrire">
-            <a class="element" href="#">S'inscrire</a>
-        </div>
+        <nav class="menu longtrait">                       
+           <span class="trait">
+           <a class="navlinkL" href="#Logements">Hébergements</a>   
+        </span> 
+        <span class="trait">                                  
+            <a class="navlink" href="#activites ">Activités</a> 
+         </span>                                            
+        </nav>          
+        <a class="registre" href="#">S'inscrire</a>        
      </header> 
-        <!--MAIN-->
-     <main>
+                          <!--MAIN-->
+     <main class="main">
+                   <!--section titre présentation-->
+         <section class="zone_title">
+         <h2 class="title">Trouver votre hébergement pour des vacances de rêve</h2 >
+         <p class="stitle">En plein centre ville ou en pleine nature</p>
+         </section><!--fin zone titre-->
+                    <!--section zone de recherche-->
+         <section class="research"><!--formulaire-->                      
+            <form class="form" method="post" action="traitement.php"> 
+             <span class="iconresearch">
+             <i class="fas fa-map-marker-alt"></i>
+             </span>                
+             <input class="fontbarre" type="search"placeholder="Marseille, France" />
+             <button>               
+              <span class="buttonloupe">
+               <i class="fas fa-search"></i>
+              </span>
+              <span class="buttonblue">
+               <p>Rechercher</p>
+              </span>
+             </button>
+            </form>
+                  <!--Zone tri et filtres-->
+            <div class="sort_filter">
+               <h3 class="filter_title">Filtres</h3>  
+                         
+               <div class="sort_element">
+                     <span class="element_icone">               
+                      <i class="fas fa-money-bill-wave"></i>
+                     </span>
+                     <p class=sort_name>Économique</p>              
+               </div>
+   
+               <div class="sort_element">
+                   <span class="element_icone">
+                    <i class="fas fa-child"></i>
+                   </span>
+                    <p class="sort_name">Familial</p> 
+               </div>
+   
+               <div class="sort_element">  
+                  <span class="element_icone" >           
+                   <i class="fas fa-heart"></i>
+                  </span>
+                  <p class="sort_name">Romantique</p>             
+               </div>
+   
+               <div class="sort_element">
+                  <span class="element_icone">
+                    <i class="fas fa-dog"></i>
+                  </span>
+                  <p class="sort_name">Animaux autorisés</p>              
+               </div>                                   
+            </div>
 
-     </main> 
-        <!--FOOTER-->
+         </section> <!--fin de section-->
+
+                <!--zone  info logement-->   
+         <section class="lodgininfo">
+         <span class="info_icon">
+            <i class="fas fa-info"></i>
+         </span>
+            <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>         
+         </section> <!--fin info-->
+
+          <!--hotel et activité--> 
+          <section class="logement">
+            <div class="title_popular">
+              <h3>Les plus populaires</h3> 
+              <span class="more"><i class="fas fa-chart-line"></i></span>
+            </div>
+            <article class="card housepop">
+            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt= "hotel_populaire_soleil">                          
+
+            </article>
+
+          </section>
+
+     </main> <!--fin du main-->
+                   <!--FOOTER-->
      <footer>
-        <div class="zone_info">
-          <div class="footer_Column1">
+        <sdiv class="zone_info">
+          <div class="Column1">
              <h3>A propos</h3>  
              <div class="A_propos">
                <ul>                 
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données de confidentialité</a></li>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Données de confidentialité</a>
               </ul>
              </div>
            </div> 
  
-           <div class="footer_Column2">
+           <div class="Column2">
               <h3>Nos hébergements</h3>
               <div class="Nos_hebergements"> 
                <ul>            
@@ -55,7 +131,7 @@
            </div>
              
  
-           <div class="footer_Column3">
+           <div class="Column3">
               <h3>Assistance</h3>
              <div class="Assistance">
                <ul>                               
@@ -63,8 +139,8 @@
                <li><a href="#">Nous contacter</a></li>
                </ul>
               </div>
-           </div>   
-        </div>    
+           </div>  <!--Fin div container-->
+               
              
      </footer> 
 

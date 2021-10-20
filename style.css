@@ -1,12 +1,13 @@
         
      *{box-sizing:border-box;
     }
-
+ 
+ }
      body{
         margin:0;  
         padding:0;  
         font-family:'raleway','sans-serif';        
-                
+              
     }
     
       header{
@@ -165,7 +166,7 @@
        .lodgininfo{
       display:flex;
       flex-direction: row;     
-      padding:10px;
+      padding:5px;
       align-items:center;
    }      
 
@@ -182,16 +183,19 @@
 
           /*logement et activité*/
       #house_contenair{
-           
-      width:100%;
-      padding:10px;
-      margin-bottom:20px;
+      min-width:375px;   
+      width:100%; 
+      margin:0;
+      padding-right:10px     
+      
+      
     }
              /* tronc commun*/
      .house_popular, .house{
       display:flex;       
                   
     }
+    
       
           /*les plus  populaires*/
       .title_popular{
@@ -208,109 +212,164 @@
       height:100%;
       justify-content: flex-start;
       width:100%;
-      margin:auto;
+      padding:5px
       align-items:flex-start;
      }
-
 
        
             
       
             /*herbergement*/
     
-      .house{
-        flex-direction: column;
-        width:100%;
-        height:100%;
-        flex-wrap: wrap;  
-        margin:auto;  
-        justify-content: flex-end;
-        align-items: flex-end;
+      .housepop{
+       margin:0;
     }
         /*les cartes*/
+        .card_link{          
+        text-decoration: none;
+    }    
+        /*carte image populaire*/
+        .card_pop{
+         display:flex; 
+         width: 335px;         
+         height: 177px;   
+         border-radius: 20px 0 20px 0;    
+         background-color: white;      
+         border-radius: 20px;
+         box-shadow: 0px 0px 3px 2px #0000003e;
+         padding: 5px 5px 0 5px;    
+         text-decoration :none;
+         margin-left: 15px;
+         margin-bottom: 29px;
+         cursor: pointer;
+         transition: 0.1s;
+      }
+        .card_pop img{
+        display:flex;  
+        width: 50%;
+        height: auto;
+        border-radius: 20px 0 0 20px;
+        padding-bottom: 5px;
+        object-fit: cover;      
+         border-radius: 20px 0 0 20px;    
+            
+       }              
+    
+      .c_text{
+       
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        text-decoration: none; 
+        padding-left:10px;  
+        margin-top:25px;     
+        font-size:15px;
+        
+        
+    }
+    .etoile2 i{
       
+      color:blue
+    }
+    .etoileoff{
+      color:black;
+      opacity:0.2;
+    }
+       /*carte image  house*/
+     .house{
+     flex-direction: column;
+    }
+      .housecity{
+       background-color:white;
+              
+    }
+    .card_hebergement{
+      background-color: white;          
+      width: 335px;
+      height:200px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 3px 2px #0000003e;
+      padding: 5px 5px 0 5px;    
+      text-decoration :none;
+      margin-left: 15px;
+      margin-bottom: 29px;
+      cursor: pointer;
+      transition: 0.1s;
+    }
+      .card_hebergement img{
+        width: 325px;
+        height: 114px;
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 5px;
+        object-fit: cover;
+    }
+    
+    .c_text{
+      flex-direction:column;
+      justify-content:space-evenly;
+      align-items: flex-start;
+      text-decoration: none; 
+      padding-left:10px;  
+      margin-top:25px;     
+      font-size:15px;
+      
+      
+  }
+      
+  }
+  .etoile i{
+      
+    color:blue;
+  }
+  .etoileoff{
+    color:black;
+    opacity:0.2;
+  }
+             /* carte image activity*/
 
-      .card_link{
-        background-color: white;        
-        border-radius: 20px;
-        box-shadow: 0px 0px 3px 2px #0000003e;
-        padding: 5px 5px 0 5px;    
-        text-decoration :none;
-        margin-left: 29px;
-        margin-bottom: 29px;
+      .card3_activity{
+        width:335px;
+        border-radius: 20px;         
+        text-decoration:none;
+        margin-left:15px;
+        
+        margin-bottom:29px;
         cursor: pointer;
         transition: 0.1s;
+        background-color:white;
+        box-shadow:  0 2px 8px 0px #0000001e;    
     }
-        /*carte image populaire*/
-      .card_pop img {
-        width: 100%;
-        height: auto;
-        border-radius: 20px 0 0 20px;
-        padding-bottom: 5px;
-        object-fit: cover;
-    }
-
-      .card_link{
-        display:flex;
-        align-items:center;
-        justify-content: space-around;
-
-    }
-      .c_text{
-        
-        justify-content: space-evenly;
-        align-items: flex-end;
-    }
-             /*carte image  house*/
-      .card_hebergement img{
-        width: 100%;
-        height: auto;
-        border-radius: 20px 0 0 20px;
-        padding-bottom: 5px;
-        object-fit: cover;
-    }
-             /* carte image activity*/
+             
 
       .card3_activity img{
        width:100%; 
-       height: auto;   
+       height:200px;   
        border-radius: 20px 20px 0 0;    
        object-fit:cover;
     }
                        
        
           /*Footer*/
-         footer{
-         display:flex;
-         flex-direction:column;      
-    }
-          .zone_info{      
-           flex-direction: column;
-           text-align:left;
-           font-size:15px;
-    }
-          .footer_Column1{
-       
-          font-size:15px;
-
-     }
-         .footer_Column2{
-
-         font-size:15px;
-
-    }
-    .footer_Column3{
-      
-      font-size:15px;
-
-    }
-    footer li{
-       list-style: none;
-       text-align: left;
-    }
-    footer ul{
-       text-align:left;
-    }
+          footer{
+            display:flex;
+            background-color: #f2f2f2;
+            
+          }
+         .zone_info{    
+             display:flex;     
+             flex-direction: column;
+             text-align: center;
+             font-size: 15px;
+           }
+           .Column1, .Column2,.Column3{  
+             display:flex;       
+             font-size:15px;
+             flex-direction: column;
+           }
+           .A_propos,.Nos_hebergements,.Assistance{
+             display:flex;
+            flex-direction: column;
+           }
     
               /*VERSION TABLET*/
               /*HEADER*/
@@ -357,6 +416,7 @@
     display:flex;      
     color:white;      
   }   
+  
  }
     @media only screen and (min-width:768px){
                
@@ -403,12 +463,14 @@
         position: relative;          
         
         }
+
+        /*section HOUSE AND ACTIVITY*/
       .activity{
         display: flex;
         flex-wrap: wrap;
         width:100%;
         
-        
+        /*les cartes logement popupaires*/
       }
       .housepop{
         display:flex;        
@@ -417,37 +479,41 @@
 
       .house_popular{              
         height:50%;
-        justify-content: flex-start;
-        width:100%;
-        margin:auto;
-        align-items:flex-start;
-       }
         
+        width:100%;                
+        
+       }
 
+       /*les cartes logement house*/
+               
+         .house{
+         display:flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       }
+      
        /*FOOTER*/
-       footer{
+      footer{
         display:flex;
         background-color: #f2f2f2;
         
       }
-     .zone_info{         
+     .zone_info{    
+         display:flex;     
          flex-direction: column;
          text-align: center;
          font-size: 15px;
        }
-       .Column1{         
+       .Column1, .Column2,.Column3{  
+         display:flex;       
          font-size:15px;
-  
+         flex-direction: column;
        }
-       .Column2{
-        
-        font-size:15px;
-  
-      }.Column3{
-        
-        font-size:15px;
-  
-      }
+       .A_propos,.Nos_hebergements,.Assistance{
+         display:flex;
+        flex-direction: column;
+       }
  }
 
     /*VERSION DESTOP*/ 

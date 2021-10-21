@@ -1,9 +1,8 @@
         
      *{box-sizing:border-box;
     }
- 
- }
-     body{
+  
+   body{
         margin:0;  
         padding:0;  
         font-family:'raleway','sans-serif';        
@@ -64,7 +63,9 @@
 
        /*MAIN*/
        /*titre de presentation */
-
+      .zone_title{
+        margin-bottom:20px;
+      }
       .title{
       font-size:24px; 
       margin:12px; 
@@ -79,6 +80,7 @@
       form{
         display:flex;
         justify-content: center;
+        
     }
       .iconresearch{  
  
@@ -127,7 +129,8 @@
          justify-content:flex-start;
          flex-wrap: wrap;
          width:100%;
-         padding:20px
+         padding-left: 12px;
+         
                       
     }    
       .filter_title{
@@ -168,6 +171,7 @@
       flex-direction: row;     
       padding:5px;
       align-items:center;
+      margin-top:20px;
    }      
 
      .info_icon{ 
@@ -182,23 +186,21 @@
    }
 
           /*logement et activité*/
-      #house_contenair{
-      min-width:375px;   
-      width:100%; 
-      margin:0;
-      padding-right:10px     
-      
-      
+      #house_contenair{       
+      width:100%;               
+           
     }
              /* tronc commun*/
-     .house_popular, .house{
+     .house_popular,.house{
       display:flex;       
                   
     }
-    
+    .h3_title{
+      margin-left:5px;
+    }
       
           /*les plus  populaires*/
-      .title_popular{
+      .t_popular{
       display:flex;
       justify-content: space-between;
       align-items:center;
@@ -212,7 +214,7 @@
       height:100%;
       justify-content: flex-start;
       width:100%;
-      padding:5px
+      padding:5px;
       align-items:flex-start;
      }
 
@@ -222,6 +224,7 @@
             /*herbergement*/
     
       .housepop{
+        
        margin:0;
     }
         /*les cartes*/
@@ -239,7 +242,7 @@
          box-shadow: 0px 0px 3px 2px #0000003e;
          padding: 5px 5px 0 5px;    
          text-decoration :none;
-         margin-left: 15px;
+         margin-left: 16px;
          margin-bottom: 29px;
          cursor: pointer;
          transition: 0.1s;
@@ -275,7 +278,7 @@
       color:black;
       opacity:0.2;
     }
-       /*carte image  house*/
+       /*carte image house*/
      .house{
      flex-direction: column;
     }
@@ -291,7 +294,7 @@
       box-shadow: 0px 0px 3px 2px #0000003e;
       padding: 5px 5px 0 5px;    
       text-decoration :none;
-      margin-left: 15px;
+      margin-left: 18px;
       margin-bottom: 29px;
       cursor: pointer;
       transition: 0.1s;
@@ -314,9 +317,8 @@
       font-size:15px;
       
       
-  }
-      
-  }
+  }      
+  
   .etoile i{
       
     color:blue;
@@ -325,6 +327,10 @@
     color:black;
     opacity:0.2;
   }
+
+            /*Zone ACTIVITY*/
+
+
              /* carte image activity*/
 
       .card3_activity{
@@ -418,6 +424,7 @@
   }   
   
  }
+  
     @media only screen and (min-width:768px){
                
       /*SECTION RECHERCHE*/
@@ -465,16 +472,28 @@
         }
 
         /*section HOUSE AND ACTIVITY*/
+        @media only screen and (min-width:620px){
+          .housepop{
+            display:flex;
+            flex-direction:row;
+            flex-wrap;
+          }
+        }
+        .house_title{
+          width:100%;
+        }
       .activity{
         display: flex;
         flex-wrap: wrap;
         width:100%;
-        
-        /*les cartes logement popupaires*/
       }
-      .housepop{
-        display:flex;        
-        flex-direction: row;
+      .title_activity{
+        width:100%;
+      }  
+        /*les cartes logement popupaires*/
+      
+      .housepop{           
+        flex-direction:row;
       }
 
       .house_popular{              
@@ -486,15 +505,17 @@
 
        /*les cartes logement house*/
                
-         .house{
-         display:flex;
+      .house{
+       display:flex;
        flex-direction: row;
        flex-wrap: wrap;
        justify-content: space-between;
-       }
-      
+      }
+      .plusinfo{
+       width:100%;
+      }
        /*FOOTER*/
-      footer{
+       footer{
         display:flex;
         background-color: #f2f2f2;
         
@@ -517,7 +538,7 @@
  }
 
     /*VERSION DESTOP*/ 
-
+  
    @media screen and ( min-width:992px){
      header{
       justify-content:flex-end;

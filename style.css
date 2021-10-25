@@ -112,7 +112,7 @@
         border:0;
         border-radius:15px;   
         position:relative;
-        right:5px;     
+        right:20px;     
     }
 
         .buttonloupe i{
@@ -177,12 +177,17 @@
      .info_icon{ 
        display:flex;      
        border:1px solid #DEEBFF;
-       width:25px;
-       height:25px;
-       border-radius:100%;
+       width:30px;
+       height:30px;          
+       border-radius:50%;
        align-items:center;
        justify-content: center;
+       color:#0065FC;
+       margin-left:5px;
       
+   }
+   .info{
+     padding-left:10px;
    }
 
           /*logement et activité*/
@@ -191,7 +196,7 @@
            
     }
              /* tronc commun*/
-     .house_popular,.house{
+     .house_popular,.city_house{
       display:flex;       
                   
     }
@@ -217,16 +222,21 @@
       padding:5px;
       align-items:flex-start;
      }
-
-       
-            
+      .housepop{
+       margin:0;
+    }  
+      .city_house{
+      flex-direction:column;      
+      height:100%;
+      justify-content:flex-start;
+      width:100%;
+      padding:5px;
+      
+      }     
       
             /*herbergement*/
     
-      .housepop{
-        
-       margin:0;
-    }
+    
         /*les cartes*/
         .card_link{          
         text-decoration: none;
@@ -235,7 +245,7 @@
         .card_pop{
          display:flex; 
          width: 335px;         
-         height: 177px;   
+         height: 145px;   
          border-radius: 20px 0 20px 0;    
          background-color: white;      
          border-radius: 20px;
@@ -249,7 +259,7 @@
       }
         .card_pop img{
         display:flex;  
-        width: 50%;
+        width: 135px;
         height: auto;
         border-radius: 20px 0 0 20px;
         padding-bottom: 5px;
@@ -257,35 +267,38 @@
          border-radius: 20px 0 0 20px;    
             
        }              
-    
-      .c_text{
-       
-        flex-direction:column;
-        justify-content:space-evenly;
-        align-items: flex-start;
-        text-decoration: none; 
-        padding-left:10px;  
-        margin-top:25px;     
-        font-size:15px;
+       .textetoile{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left:10px;
         
-        
-    }
-    .etoile2 i{
+      }
+      .c_text {
+       margin:5px;
       
-      color:blue
+      line-height:13px;
+      
+      }  
+    .c_text p{
+      font-size:15px;
+      
     }
-    .etoileoff{
+     .etoile i{
+      font-size: small;
+      color:blue;
+      padding-top:8px;
+    }
+     .etoileoff{
+       font-size: small;
       color:black;
-      opacity:0.2;
+      opacity:0.3;
     }
        /*carte image house*/
      .house{
      flex-direction: column;
     }
-      .housecity{
-       background-color:white;
-              
-    }
+     
     .card_hebergement{
       background-color: white;          
       width: 335px;
@@ -300,33 +313,30 @@
       transition: 0.1s;
     }
       .card_hebergement img{
-        width: 325px;
-        height: 114px;
+        width: 100%;
+        height: 115px;
         border-radius: 20px 20px 0 0;
-        padding-bottom: 5px;
+        padding-bottom:5px;
         object-fit: cover;
     }
-    
-    .c_text{
-      flex-direction:column;
-      justify-content:space-evenly;
-      align-items: flex-start;
-      text-decoration: none; 
-      padding-left:10px;  
-      margin-top:25px;     
-      font-size:15px;
-      
-      
-  }      
   
-  .etoile i{
-      
-    color:blue;
-  }
-  .etoileoff{
-    color:black;
-    opacity:0.2;
-  }
+    .textetoile2{
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: left;
+      margin-left:10px;
+      line-height:0;
+     
+
+    }
+    .c_text2 p  {
+     font-size:14px;
+     margin-bottom:5px; 
+     line-height: 1px;
+                  
+     }
+     
 
             /*Zone ACTIVITY*/
 
@@ -335,10 +345,9 @@
 
       .card3_activity{
         width:335px;
-        border-radius: 20px;         
+        border-radius:20px;         
         text-decoration:none;
-        margin-left:15px;
-        
+        margin-left:20px;        
         margin-bottom:29px;
         cursor: pointer;
         transition: 0.1s;
@@ -349,38 +358,72 @@
 
       .card3_activity img{
        width:100%; 
-       height:200px;   
+       height:135px;   
        border-radius: 20px 20px 0 0;    
        object-fit:cover;
-    }
-                       
+      }
+      .card3_activity h4{
+        padding-left:15px;
+        padding-bottom:15px;
+      }
+                    
        
-          /*Footer*/
+          /*FOOTER*/
           footer{
             display:flex;
             background-color: #f2f2f2;
+            
             
           }
          .zone_info{    
              display:flex;     
              flex-direction: column;
-             text-align: center;
+             text-align: left;
              font-size: 15px;
+             margin-left:20px;
+             margin-bottom:20px;
            }
            .Column1, .Column2,.Column3{  
              display:flex;       
              font-size:15px;
              flex-direction: column;
            }
-           .A_propos,.Nos_hebergements,.Assistance{
+           .A_propos a,.Nos_hebergements a,.Assistance a{
              display:flex;
             flex-direction: column;
+            text-decoration: none;
            }
+               
+
+              /*VERSION INTERMEDIAIRE DU MOBILE VERS TABLET 325 /599 px */
+              
+     @media only screen and (min-width:425px) and (max-width:599px){
+                     /*main* les cartes*/
+    .house_pop{
+    flex-direction: column;
+  }
+  .card_pop,.card_hebergement,.card3_activity{
+    width:550px;    
     
-              /*VERSION TABLET*/
-              /*HEADER*/
+  }
+  
+    .house{
+    background-color: #f2f2f2;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+  }
+    .house_title{
+    width:100%;
+  }
+   
+ }
+      /* VERSION INTERMEDIAIRE MOBILE /TABLETTE MIN 600PX/767px */
+
     @media only screen and (min-width:600px){
-     header {      
+                      /*HEADER*/
+      header {      
       border-bottom: none;
       flex-direction:row;
       
@@ -406,6 +449,8 @@
        border-top:2px solid #0065FC;
        text-decoration: none;
   }
+
+              /*SECTION RECHERCHE*/
       form{      
        justify-content:flex-start;
         margin-left:10px;
@@ -422,15 +467,36 @@
     display:flex;      
     color:white;      
   }   
-  
+} 
+                  /*SECTION MAIN */
+                  /*les cartes*/
+    @media  only screen and(min-width:600px)and (max-width:767px) {
+          
+  .card_pop{
+    width:730px;
+    height:200px
+  }   
+  .card_pop img{
+    width:335px;
+  } 
+  .city_house,.activity{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding-right:25px;
+  }
+  .card_hebergement,.card3_activity{
+    width:325px;
+    justify-content: space-between;
+  }            
  }
   
+                   /* VERSION TABLET*/
     @media only screen and (min-width:768px){
-               
-      /*SECTION RECHERCHE*/
-    
+        
+        
 
-       /*SECTION TRI ET FITRE*/
+                 /*SECTION TRI ET FITRE*/
        .categories_filtres{
         display:flex;
         margin-top: 54px;
@@ -471,13 +537,9 @@
         
         }
 
-        /*section HOUSE AND ACTIVITY*/
-        @media only screen and (min-width:620px){
-          .housepop{
-            display:flex;
-            flex-direction:row;
-            flex-wrap;
-          }
+              /*section HOUSE AND ACTIVITY*/
+        @media only screen and (min-width:600px){
+          
         }
         .house_title{
           width:100%;
@@ -493,23 +555,23 @@
         /*les cartes logement popupaires*/
       
       .housepop{           
-        flex-direction:row;
+        flex-direction:column;
       }
 
       .house_popular{              
-        height:50%;
-        
+        height:50%;        
         width:100%;                
         
        }
+       
+       .city_house{
+        background:#f2f2f2;
+        }
 
        /*les cartes logement house*/
                
       .house{
-       display:flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-       justify-content: space-between;
+       
       }
       .plusinfo{
        width:100%;
@@ -537,9 +599,9 @@
        }
  }
 
-    /*VERSION DESTOP*/ 
+                    /*VERSION DESTOP*/ 
   
-   @media screen and ( min-width:992px){
+    @media screen and ( min-width:992px){
      header{
       justify-content:flex-end;
       
@@ -576,7 +638,30 @@
         .sort_name{
           font-size:16px;
         }
- }    
+        .house{
+          width:70%;
+          flex-direction:column;
+          background-color: #f2f2f2;
+          
+        }
+        .housecity{
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .housepop{
+        width:30%;
+        }
+        .house_popular{
+          flex-direction: column;
+
+        }
+                 /*MAIN*/
+  }                /*ZONE DES LOGEMENTS */
+        
+
+        
+
+     
          
          
    

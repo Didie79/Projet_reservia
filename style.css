@@ -61,8 +61,8 @@
                   
     }
 
-       /*MAIN*/
-       /*titre de presentation */
+                        /*MAIN*/
+                /*titre de presentation */
       .zone_title{
         margin-bottom:20px;
       }
@@ -75,8 +75,8 @@
        margin:12px;
     }
  
-        /*Section zone de recherche*/
-        /*barre de recherche*/
+                /*Section ZONE RECHERCHE*/
+                 /*barre de recherche*/
       form{
         display:flex;
         justify-content: center;
@@ -122,7 +122,7 @@
         display:none;
     } 
 
-          /*tri et filtres*/
+                  /*tri et filtres*/
           
         .sort_filter{
          display:flex;  
@@ -163,39 +163,40 @@
        .sort_name{
         margin:15px;
     }
-            /*info*/         
+                      /*info logement*/         
        
        
-       .lodgininfo{
+    .lodgininfo{
       display:flex;
-      flex-direction: row;     
-      padding:5px;
-      align-items:center;
+      flex-direction: row;
+      align-items:center;     
+      padding:5px;     
       margin-top:20px;
    }      
 
      .info_icon{ 
-       display:flex;      
-       border:1px solid #DEEBFF;
-       width:35px;
-       height:27px;          
-       border-radius:50%;
-       align-items:center;
-       justify-content: center;
-       color:#0065FC;
-       margin-left:5px;
+      display:flex;  
+      color:#0065FC;
+      border-radius: 50%;
+      border: 2px solid #f2f2f2;
+      justify-content:center;   
+      align-items:center;   
+      width: 10%; 
+      height: 30px; 
+     
+      
       
    }
    .info{
      padding-left:10px;
    }
-
-          /*logement et activité*/
+   
+                   /*SECTION LOGEMENT ET ACTIVITE*/
       #house_contenair{       
       width:100%;               
            
     }
-             /* tronc commun*/
+                      /* tronc commun*/
      .house_popular,.city_house{
       display:flex;       
                   
@@ -204,7 +205,7 @@
       margin-left:5px;
     }
       
-          /*les plus  populaires*/
+                  /*les plus  populaires*/
       .t_popular{
       display:flex;
       justify-content: space-between;
@@ -234,14 +235,14 @@
       
       }     
       
-            /*herbergement*/
+                     /*herbergement*/
     
     
-        /*les cartes*/
+                    /*les cartes*/
         .card_link{          
         text-decoration: none;
     }    
-        /*carte image populaire*/
+                /*carte image populaire*/
         .card_pop{
          display:flex; 
          width:90%;         
@@ -371,9 +372,10 @@
           footer{
             display:flex;
             background-color: #f2f2f2;
-            
+                      
             
           }
+          
          .zone_info{    
              display:flex;     
              flex-direction: column;
@@ -381,6 +383,8 @@
              font-size: 15px;
              margin-left:20px;
              margin-bottom:20px;
+             font-style: normal;
+             
            }
            .Column1, .Column2,.Column3{  
              display:flex;       
@@ -391,6 +395,7 @@
              display:flex;
             flex-direction: column;
             text-decoration: none;
+            color: black;
            }
                         
                
@@ -443,6 +448,12 @@
     display:flex;      
     color:white;      
   }   
+  .borderrond{
+    display:flex;
+    border: black;
+    width:100%;
+    border:25%;
+  }
   .info_icon{
     width:35px;
     height:30px;
@@ -463,7 +474,7 @@
     width:335px;
   }           
  }
-                   /* VERSION TABLET*/
+                   /* VERSION TABLET (min 768px) */
     @media only screen and (min-width:768px){
              
                  /*SECTION TRI ET FITRE*/
@@ -473,7 +484,7 @@
         margin-left:63px ;
         }
           .filtre {
-        display:flex; 
+          display:flex; 
           justify-content: space-between;   
                        
         
@@ -521,7 +532,7 @@
       .title_activity{
         width:100%;
       }  
-        /*les cartes logement popupaires*/
+                   /*les cartes logement popupaires*/
       
       .housepop{           
         flex-direction:column;
@@ -554,7 +565,7 @@
       .plusinfo{
        width:100%;
       }
-       /*FOOTER*/
+                          /*FOOTER*/
        footer{
         display:flex;
         background-color: #f2f2f2;
@@ -577,20 +588,27 @@
        }
  }
 
-                    /*VERSION DESTOP*/ 
+                     /*VERSION DESTOP*/ 
   
     @media screen and ( min-width:992px){
       *{box-sizing:border-box;
       }
+
+                      /*HEADER*/
      header{
+       max-width :1440px;
       justify-content:flex-end;
       
     }
     #logo{
+      position:relative;
+      left:50%  
         
-        justify-content: space-between;
-        margin-right:60% ;
+        
                                
+       }
+       .nav{
+         justify-content: space-between;
        }
        .longtrait{
         border:2px none #f2f2f2;        
@@ -603,26 +621,28 @@
           
           
          }
-
+                     /*barre de recherche*/
         
 
-         /* ZONE RECHERCHE DESTOP*/
+                  /* ZONE RECHERCHE DESTOP*/
         .sort_filter{         
           flex-wrap:nowrap;
-          width:0;
+         width:55%;
         }
         .filter_title{
-         width:5%;
+         padding-top:15px;
         }
 
         .sort_name{
           font-size:16px;
         }
-        /* MAIN*/
+                          /* MAIN*/
         .main{
         max-width:1440px;
         margin:auto;
         }
+
+                    /*section HOUSE AND ACTIVITY*/
         #house_contenair{
         display:flex;        
         flex-direction: row-reverse;
@@ -660,6 +680,7 @@
           display:flex;
           width:65%;
         }
+                        /*card hebergement et popular*/
         .card_hebergement{
           width: 245px;
           height:220px;
@@ -673,7 +694,7 @@
           margin-right:20px;
           border-radius: 30px;
         }
-            /* card activity destop*/
+                   /* section et card activity */
                         
           .bloc_activity{
           display:flex;                   
@@ -751,7 +772,7 @@
          
        }
       
-          /*FOOTER DESTOP*/
+                  /*FOOTER DESTOP*/
           footer{
           justify-content:space-between;
           }
@@ -761,15 +782,15 @@
         align-items: flex-start;
         margin-left:10px;
       }
-         .Column1,.Column2,.Column3{
-           flex-direction: column;
-           text-align: center;
-           margin:30px;
-           padding:20px;
+        .Column1,.Column2,.Column3{
+        flex-direction: column;
+        text-align: center;
+        margin:30px;
+        padding:20px;
          }
 
         .A_propos,.Nos_hebergements,.Assistance{
-          justify-content: center;
+          justify-content:center;
         }      
   }                
         

@@ -34,7 +34,7 @@
          <p class="stitle">En plein centre ville ou en pleine nature</p>
          </section><!--fin zone titre-->
                     <!--section zone de recherche-->
-                    
+
          <section class="research"><!--formulaire-->                      
             <form class="form" method="post" action="traitement.php"> 
              <span class="iconresearch">
@@ -95,8 +95,8 @@
 
           <!--hotel et activité--> 
          <section id="house_contenair"><!--début section hebergement-->
-
-          <div class="house_popular"> <!--hebergement populaire-->
+           <div class="bloc_houseright"> <!--début bloc droite pop-->
+            <div class="house_popular"> <!--hebergement populaire-->
 
             <div class="t_popular"> <!-- zone titre populaire-->
                   <h3 class="h3_title">Les plus populaires</h3> 
@@ -164,9 +164,11 @@
 
             </article> <!--fin des cartes populaires-->
 
-          </div><!--fin hebergement populaire -->   
+            </div><!--fin hebergement populaire -->   
+           </div> <!--Fin bloc droite pop destop-->
 
-          <div class=" city_house"><!--hebergement-->
+          <div class="bloc_cityleft"> <!--début bloc gauche city-->
+           <div class=" city_house"><!--hebergement-->
              <div class="house_title">    
                   <h3 class="h3_title">Hébergement à Marseille</h3>
              </div>
@@ -190,8 +192,7 @@
                         </div> <!--fin carte texte-->
                         </div><!--fin carte-->
                      </a>
-               </article>  <!--fin carte 1-->
-                     
+               </article>  <!--fin carte 1-->                     
                <article class="card housecity"><!--début carte 2-->
                      <a href="#" class= "card_link"> 
                         <div class="card_hebergement"> <!--carte-->
@@ -292,15 +293,14 @@
                           </div>
                         </div><!--fin carte-->
                      </a>
-               </article>  <!--fin carte 6-->
-             
-             
-             <div class="plusinfo">   
-              <h4 class="h3_title">Afficher plus</h3>               
+               </article>  <!--fin carte 6-->    
+
+              <div class="plusinfo">   
+               <h4 class="h3_title">Afficher plus</h3>               
              </div>      
 
-          </div><!--fin hebergement-->
-
+            </div><!--fin hebergement-->
+          </div><!--Fin bloc gauche city-->
          </section> <!--fin section hebergement -->
 
          <section class="activity"><!--début section activité-->
@@ -308,41 +308,46 @@
             <h3 class="h3_title">Activité à Marseille</h3>
           </div> <!--fin zone titre activité-->
 
+          <div class="bloc_activity"> <!--bloc zone bloc activite-->
             <article class="card_activity">   
               <a href="#" class= "card_link p1">                                             
-                <div class="card3_activity">
+                <div class="card3_activity vieux_port">
                   <img src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt= "activite_vieuxport">
                    <h4>Vieux Port</h4>
                   </div>                          
               </a>             
-            </article>
+            </article> 
+            <div class="duo1"><!--div duo1 carte-->
             <article class="card_activity"> 
                 <a href="#" class= "card_link p2">                                          
-                  <div class="card3_activity">
+                  <div class="card3_activity fort_pomegues">
                    <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt= "activite_pomegues">
                    <h4>Fort de Pomégues</h4>
                  </div>
                 </a>                
             </article>
-            <article class="card_activity">  
+           
+            <article class="card_activity ">  
                <a href="#" class= "card_link p3">                        
-                  <div class= "card3_activity">
+                  <div class= "card3_activity iles_frioul">
                     <img src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt= "activite_frioul">
                     <h4>Iles de Frioul</h4>
                   </div>                   
                 </a>           
             </article>
+            </div> <!---fin duo1 carte--->
             <article class="card_activity">  
                <a href="#" class= "card_link p4" >                        
-               <div class=" card3_activity">
+               <div class=" card3_activity parc_calanque">
                 <img src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt= "activite_calanque">
                  <h4>Parc National des Calanques</h4>
                </div>                                                 
                </a>             
             </article>
+            <div class="duo2"><!--duo2 carte-->
             <article class="card_activity">  
                <a href="#" class= "card_link p5">                          
-                  <div class=" card3_activity">
+                  <div class=" card3_activity Dame_garde">
                      <img src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt= "activite_damegarde">
                     <h4>Notre Dame de la Garde</h4>
                   </div>                          
@@ -351,7 +356,7 @@
             </article>
             <article class="card_activity">  
               <a href="#" class= "card_link p6">                          
-                 <div class=" card3_activity">
+                 <div class=" card3_activity parc_longchamp">
                   <img src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt= "activite_parclongchamp">
 
                    <h4>Parc Longchamp</h4>
@@ -359,6 +364,10 @@
                </a>
                            
            </article>
+           </div> <!--fin duo2 carte-->
+           
+          </div> <!--fin div bloc activite -->
+
          </section> <!--fin de section activité-->
 
       </main>    <!--FIN DU MAIN-->

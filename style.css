@@ -14,11 +14,9 @@
        align-items:center;
        flex-wrap: wrap; 
        justify-content: space-between;            
-        margin-bottom:50px;
+        margin-bottom:30px;
         border-bottom:2px solid #f2f2f2;   
-           
-        
-                       
+                            
     }
 
       #logo{                     
@@ -27,43 +25,46 @@
     }
       .menu{      
       display:flex;                  
-      order:1; 
-      margin:auto;
-      padding-top:20px;
-      
-                                                
-    }   
-    .navlink,.navlink2{    
-    text-decoration: none;  
-    } 
-    
-    .trait1,.trait2{
+      order:1;         
+      padding-top:20px; 
      
-     border-bottom:2px transparent ;
-     align-items: center;
-     padding:0 25px 0 25px;
-                 
-  }
-  .trait1 {
-    border-bottom:2px solid #0065FC;
-    align-items: center;
-     padding:0 50px;
-  }
-  
+          
+                                                
+    } 
+    .activite{
+      padding-left:30px;
+    }
+    .hebergement{
+      padding-right:30px;
+    }
+
+    nav a {
+      text-decoration: none;        
+      padding-bottom:25px;
+    }
            
-    .trait2:hover {
-    border-bottom:2px solid #0065FC;
-    align-items: center;
-     padding:0 55px;
-  }
-    
-     .registre{
-      margin-right:20px;  
-      font-size:1rem; 
-      font-weight: bold; 
-      padding: 0 1rem; 
+     .trait1{
+      color:#0065FC;
+     } 
+     .traitleft{
+       border-bottom:2px solid #0065FC;
+       padding-left:60px;
+       padding-bottom:20px;
+       
+     }
+     
+     .traitright a:hover {
+      text-decoration:solid;
+      border-bottom:2px solid #0065FC;
+      padding-bottom:20px;
+      padding-right:100px;
+      color:black;
+     }
+     .registre{       
+      font-weight: bold;      
       text-decoration:none;
-      
+      color:#0065FC;
+      padding-right:10px;
     }   
          
                         /*MAIN*/
@@ -71,20 +72,17 @@
       .zone_title{
         margin-bottom:20px;
       }
-      .title{
-      font-size:24px; 
-      margin:12px; 
+      h2,.stitle{       
+      margin-left:15px; 
     }
-      .stitle{
-       font-size:16px;
-       margin:12px;
-    }
+      
  
                 /*Section ZONE RECHERCHE*/
                  /*barre de recherche*/
       form{
         display:flex;
-        justify-content: center;
+        justify-content:center;
+        margin-left:10px;
         
     }
       .iconresearch{  
@@ -96,8 +94,8 @@
     }
       .iconresearch i{
        display:flex;
-       justify-content: center;
-       padding-top: 15px;   
+       justify-content:center;
+       padding-top:15px;   
     }
 
       .fontbarre{
@@ -207,7 +205,7 @@
                   
     }
     .h3_title{
-      margin-left:5px;
+      margin-left:20px;
     }
       
                   /*les plus  populaires*/
@@ -244,9 +242,12 @@
     
     
                     /*les cartes*/
-        .card_link{          
-        text-decoration: none;
+        .card_link {          
+        text-decoration: none;        
     }    
+       .card_link :hover{
+        transform: scale(0.9);          
+     }
                 /*carte image populaire*/
         .card_pop{
          display:flex; 
@@ -258,11 +259,14 @@
          box-shadow: 0px 0px 3px 2px #0000003e;
          padding: 5px 5px 0 5px;    
          text-decoration :none;
-         margin-left: 16px;
+         margin-left: 20px;
          margin-bottom: 29px;
          cursor: pointer;
-         transition: 0.1s;
+         transition: 0.1s;                
+                    
       }
+      
+      
         .card_pop img{
         display:flex;  
         width: 135px;
@@ -270,8 +274,8 @@
         border-radius: 20px 0 0 20px;
         padding-bottom: 5px;
         object-fit: cover;      
-         border-radius: 20px 0 0 20px;    
-            
+        border-radius: 20px 0 0 20px;    
+          
        }              
        .textetoile{
         display:flex;
@@ -310,7 +314,7 @@
       box-shadow: 0px 0px 3px 2px #0000003e;
       padding: 5px 5px 0 5px;    
       text-decoration :none;
-      margin-left: 18px;
+      margin-left: 20px;
       margin-bottom: 29px;
       cursor: pointer;
       transition: 0.1s;
@@ -404,46 +408,56 @@
            }
                         
                
-      /* VERSION INTERMEDIAIRE MOBILE /TABLETTE MIN 600PX/767px */
+      /* VERSION INTERMEDIAIRE MOBILE /TABLETTE MIN 601PX/767px */
 
-    @media only screen and (min-width:600px){
+    @media only screen and (min-width:601px){
       *{box-sizing:border-box;
       }              
       /*HEADER*/
       header {      
-      border-bottom: none;
+      border-bottom:none;
       flex-direction:row;     
                 
     }   
-      
-     .longtrait{
-       margin:0;
-             
-     }     
-     
+            
      .registre{
        order:1;
        
      }
-      .trait{
-      border-bottom: none;
-      text-decoration:none;             
-     
-     
-      }
-      .trait a:hover{
-       border-top:2px solid #0065FC;
-       text-decoration: none;
-  }
+   
+     nav a {
+      text-decoration: none;        
+           
+      
+    }
+    .traitleft{
+      border-top:2px solid #0065FC;
+      border-bottom:none;
+      
+      padding-bottom:20px;
+      
+    }
+    
+    .traitright a:hover {
+     text-decoration:solid;
+     border-top: 2px solid #0065FC;
+     border-bottom:none;
+     padding-top: 20px;
+     padding-right:50px;
+     color:black;
+    }
 
               /*SECTION RECHERCHE*/
       form{      
-       justify-content:flex-start;
+       justify-content:center;
         margin-left:10px;
   }  
+  .fontbarre{
+    width:275px
+  }
        button{
        border-radius: 0 20px 20px 0;
-       width:80px;
+       width:100px;
   }
   .buttonloupe{
     display:none;
@@ -453,21 +467,27 @@
     display:flex;      
     color:white;      
   }   
-  .borderrond{
-    display:flex;
-    border: black;
-    width:100%;
-    border:25%;
-  }
+  
   .info_icon{
     width:35px;
     height:30px;
   }
+
+  .iconresearch{    
+       width:75px;
+      height:50px;
+  }
+           
+    
+
                   /*SECTION MAIN */
                   /*les cartes*/   
-          
-  .card_pop,.card3_activity{
-    width:90%;
+   .card_pop{
+     width:95%;
+     height:160px;
+   }       
+  .card3_activity{
+    width:95%;
     height:200px;
   }   
   .housecity{
@@ -497,8 +517,21 @@
   .card_pop img{
     width:335px;
   }  
-
+                     /*footer*/
+  footer{
+    justify-content: space-around;
+  }
+  .zone_info{
+  flex-direction: row;
+  }
+  .Column1,.Column2{
+    margin-right:20px;
+  }
+  .A_propos,.Assistance,.Nos_hebergements{
+    font-size: 14px;
+  }
  }
+ 
                    /* VERSION TABLET (min 768px) */
     @media only screen and (min-width:768px){
              
@@ -568,10 +601,8 @@
         width:100%;                
         
        }
-       
-      
-        
-       
+           
+               
         #activity{
           flex-direction: column;
           flex-wrap: wrap;
@@ -587,19 +618,18 @@
        width:100%;
       }
                           /*FOOTER*/
-       footer{
-        display:flex;
+       footer{        
         background-color: #f2f2f2;
         
       }
      .zone_info{    
-         display:flex;     
-         flex-direction: column;
+              
+         flex-direction: row;
          text-align: center;
          font-size: 15px;
        }
        .Column1, .Column2,.Column3{  
-         display:flex;       
+               
          font-size:15px;
          flex-direction: column;
        }
@@ -618,54 +648,30 @@
                       /*HEADER*/
      header{
        max-width :1440px;
-      justify-content:flex-end;
+      justify-content: space-between;
+      margin-left:70px;
       }
 
     #logo{
-             
+        position: relative;       
         
                                
        }
-       .nav{
-       margin-right: 25%;
-       }
-       .longtrait{
-        border:2px none #f2f2f2;        
-        
-         }
-         .longtrait :hover{
-           border-bottom: 2px none;
-          border-top:2px solid #0065FC;
-          text-decoration: none;    
-                    
-         }
-         .registre{
-           display:flex;
-           flex:end;
-         }
-         .trait1,.trait2{
-     
-          border-top:2px transparent ;
-          align-items: center;
-          padding:0 25px 0 25px;
-                      
-       }
-       .trait1 {
-         border-top:2px solid #0065FC;
-         align-items: center;
-          padding:0 50px;
+
+       .menu{
+       margin-left: 35%;
        }
        
-                
-         .trait2:hover {
-         border-top:2px solid #0065FC;
-         align-items: center;
-          padding:0 55px;
-       }
-
+         .registre{
+           display:flex;
+           ;
+         }
+               
          
                      /*barre de recherche*/
-        
+        form{
+          justify-content: flex-start;
+        }
 
                   /* ZONE RECHERCHE DESTOP*/
         .sort_filter{         
@@ -679,6 +685,7 @@
         .sort_name{
           font-size:16px;
         }
+
                           /* MAIN*/
         .main{
         max-width:1440px;
@@ -689,28 +696,32 @@
         #house_contenair{
         display:flex;        
         flex-direction: row-reverse;
+        max-width: 1440px;
       }
       
         .housecity{
           flex-direction: row;
-          flex-wrap: wrap;         
+          flex-wrap: wrap; 
+
         }
        
         .house_popular{
           height:100%;
           border-radius:30px;
           padding:5px;
-          margin-left:20px;
+          margin-right:20px;
+         
         }
 
         .card_pop{
-          width:100%;
-          height:145px;
+          width:90%;
+          height:165px;
+          margin-top:50px
         }
 
         .card_pop img{
-          width:135px;
-          height:140px;
+          width:50%;
+          height:160px;
         }
 
         .bloc_houseright{
@@ -741,12 +752,13 @@
           margin-right:50px;
           padding-right:20px;          
           border-radius: 30px;
+          margin-left:10px;
         }
                    /* section et card activity */
                         
           .bloc_activity{
           display:flex;                   
-                       
+           margin-left:10px;            
         }
           .card3_activity{
            width:90%;
@@ -822,7 +834,7 @@
       
                   /*FOOTER DESTOP*/
           footer{
-          justify-content:space-between;
+          justify-content:space-evenly
           }
          .zone_info{
         flex-direction: row;

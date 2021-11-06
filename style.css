@@ -1,14 +1,14 @@
         
      *{box-sizing:border-box;
     }
-  
+                      /*BODY*/
    body{
         margin:0;  
         padding:0;  
         font-family:'raleway','sans-serif';        
               
     }
-    
+                     /*HEADER*/
       header{
        display:flex; 
        align-items:center;
@@ -100,16 +100,16 @@
 
       .fontbarre{
        width:250px;
-       height:50px;
-       border-color:#f2f2f2;    
-       font-weight: bold;
+       height:50px;       
+       font-family:'raleway','sans-serif';    
+       font-weight:900;       
        font-size: medium;
        border:1px solid #f2f2f2;  
    
     }
 
         button {
-        background-color:blue;
+        background-color:#0065FC;
         width:50px;
         height:50px;
         border:0;
@@ -160,7 +160,7 @@
        width:50px;  
        margin-left:-3px;     
        justify-content:center;
-       color:blue;
+       color:#0065FC;
     }
        
        .sort_name{
@@ -214,7 +214,9 @@
       justify-content: space-between;
       align-items:center;
       width:100%;
-      padding:5px;
+      padding:5px; 
+      margin-top:10px     
+     
 
     }
      .house_popular{
@@ -224,7 +226,8 @@
       justify-content: flex-start;
       width:100%;
       padding:5px;
-      align-items:flex-start;
+      margin-top:14px;
+      
      }
       .housepop{
        margin:0;
@@ -235,6 +238,7 @@
       justify-content:flex-start;
       width:100%;
       padding:5px;
+      margin-bottom:4px;
       
       }     
       
@@ -293,7 +297,7 @@
     
      .etoile i{
       font-size: small;
-      color:blue;
+      color:#0065FC;
       padding-top:8px;
     }
      .etoileoff{
@@ -314,7 +318,7 @@
       box-shadow: 0px 0px 3px 2px #0000003e;
       padding: 5px 5px 0 5px;    
       text-decoration :none;
-      margin-left: 20px;
+      margin-left: 19px;
       margin-bottom: 29px;
       cursor: pointer;
       transition: 0.1s;
@@ -355,7 +359,7 @@
         width:90%;
         border-radius:20px;         
         text-decoration:none;
-        margin-left:20px;        
+        margin-left:19px;        
         margin-bottom:29px;
         cursor:pointer;
         transition: 0.1s;
@@ -399,10 +403,13 @@
              display:flex;       
              font-size:15px;
              flex-direction: column;
+             text-align: left;
            }
            .A_propos a,.Nos_hebergements a,.Assistance a{
              display:flex;
-            flex-direction: column;
+            flex-direction: column;            
+            align-items: flex-start;
+            padding-top:4px;
             text-decoration: none;
             color: black;
            }
@@ -411,6 +418,7 @@
       /* VERSION INTERMEDIAIRE MOBILE /TABLETTE MIN 601PX/767px */
 
     @media only screen and (min-width:601px){
+      .card_hebergement{width:280px!important;}
       *{box-sizing:border-box;
       }              
       /*HEADER*/
@@ -464,8 +472,12 @@
     }
 
   .buttonblue{
-    display:flex;      
-    color:white;      
+    display:flex; 
+    justify-content:center;     
+    color:white;
+    font-family: 'raleway';  
+    font-weight:bold;
+       
   }   
   
   .info_icon{
@@ -474,14 +486,15 @@
   }
 
   .iconresearch{    
-       width:75px;
+       width:50px;
       height:50px;
   }
            
     
 
                   /*SECTION MAIN */
-                  /*les cartes*/   
+                  /*les cartes*/ 
+                    
    .card_pop{
      width:95%;
      height:160px;
@@ -623,10 +636,12 @@
         
       }
      .zone_info{    
-              
+         width:100%;     
          flex-direction: row;
          text-align: center;
          font-size: 15px;
+         justify-content: space-evenly;
+         align-items: flex-start;
        }
        .Column1, .Column2,.Column3{  
                
@@ -664,22 +679,29 @@
        
          .registre{
            display:flex;
-           ;
+           
          }
-               
+                    /*presentation*/
+                    .title,.stitle{
+                      margin-left:30px;
+                    }    
          
                      /*barre de recherche*/
         form{
           justify-content: flex-start;
+          margin-left:30px;
         }
 
                   /* ZONE RECHERCHE DESTOP*/
         .sort_filter{         
           flex-wrap:nowrap;
-         width:55%;
+          width:55%;
+         margin-left:30px;
+         padding-right:30px;
         }
         .filter_title{
          padding-top:15px;
+         padding-right:30px;
         }
 
         .sort_name{
@@ -837,14 +859,14 @@
           justify-content:space-evenly
           }
          .zone_info{
+        width:100%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
         margin-left:10px;
       }
         .Column1,.Column2,.Column3{
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column;        
         margin:30px;
         padding:20px;
          }

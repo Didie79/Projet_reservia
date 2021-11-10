@@ -27,11 +27,18 @@
       .menu{      
       display:flex;  
       justify-content:space-around;                
-      order:1;         
-      padding-top:20px; 
-      width:100%;   
+      order:1; 
+      border-bottom:2px solid #0065FC;      
+      width:50%;   
                                                           
     } 
+    ul{
+      display:flex;
+      list-style: none;
+      width:50%;
+      
+    }
+    
     .activite{
       padding-left:30px;
       color:black;
@@ -44,22 +51,12 @@
     nav a {
       text-decoration: none;        
       padding-bottom:25px;
-    }
-           
-     .trait1{
-      color:#0065FC;
-     } 
-     .traitleft{
-       border-bottom:2px solid #0065FC;       
-       padding-bottom:20px;
+    }         
        
-     }
-     
-     .traitright a:hover {
+      .traitright a:hover {
       text-decoration:solid;
       border-bottom:2px solid #0065FC;
-      padding-bottom:20px;
-      padding-right:100px;
+      padding-bottom:20px;      
       color:#0065FC;
      }
      .registre{       
@@ -454,24 +451,24 @@
     }
     .menu{
       justify-content: space-evenly;
+      border-bottom:none;
     }
-    .trait1{
-      border-top: 2px solid #0065FC;
-      padding-top:20px;
-    }
-    .trait1 a:hover{
-      border-top:2px solid #0065FC
+    ul{
+      align-items: center;
     }
     .traitleft{
+      border-top: 2px solid #0065FC;
+      padding-top:10px;      
       border-bottom:none;
-    }     
-    .traitright a:hover {
-      text-decoration:solid;
-      border-bottom:none;
-      border-top:2px solid #0065FC;
-      padding-top:20px;
-      padding-right:20px;
     }
+    .traitright a:hover{
+      border-top:2px solid #0065FC;
+      border-bottom:none;
+      padding-top:20px;
+     
+    }
+         
+    
     
 
               /*SECTION RECHERCHE*/
@@ -704,19 +701,11 @@
    }
     .menu{
       justify-content: flex-end;
-      padding-right:55px;
+      padding-right:50px;
+      list-style: none;
     }
-    .hebergement{
-      padding-right:55px;
-    }
-    .trait1{
-      
-    }
-     .trait2{
-       
-       
-     } 
-
+    
+    
    .registre{
     position:relative;     
     padding-right:40px;

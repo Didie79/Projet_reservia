@@ -15,7 +15,8 @@
        flex-wrap: wrap; 
         justify-content: space-between;            
         margin-bottom:30px;
-        border-bottom:2px solid #f2f2f2;   
+        border-bottom:2px solid #f2f2f2;  
+        width:100%; 
                             
     }
 
@@ -24,12 +25,12 @@
        color:#0065FC;   
     }
       .menu{      
-      display:flex;                  
+      display:flex;  
+      justify-content:space-around;                
       order:1;         
       padding-top:20px; 
-     
-          
-                                                
+      width:100%;   
+                                                          
     } 
     .activite{
       padding-left:30px;
@@ -37,8 +38,7 @@
       font-weight: 400;
     }
     .hebergement{
-      padding-right:30px;
-      color:#0065FC
+     color:#0065FC
     }
 
     nav a {
@@ -437,6 +437,7 @@
       header {      
       border-bottom:none;
       flex-direction:row; 
+      flex-wrap: nowrap;
       margin-top:10px;    
                 
     }   
@@ -452,7 +453,7 @@
       
     }
     .menu{
-      margin-right:15%;
+      justify-content: space-evenly;
     }
     .trait1{
       border-top: 2px solid #0065FC;
@@ -701,12 +702,18 @@
        margin-right:30%; 
                                
    }
-
+    .menu{
+      justify-content: flex-end;
+      padding-right:55px;
+    }
+    .hebergement{
+      padding-right:55px;
+    }
     .trait1{
-      margin-left:100%
+      
     }
      .trait2{
-       margin-left:150%;
+       
        
      } 
 

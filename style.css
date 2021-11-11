@@ -14,51 +14,67 @@
        align-items:center;
        flex-wrap: wrap; 
         justify-content: space-between;            
-        margin-bottom:30px;
-        border-bottom:2px solid #f2f2f2;  
-        width:100%; 
+        margin-bottom:30px;        
+        
                             
     }
 
       #logo{                     
-      padding:0 20px;         
+              
        color:#0065FC;   
     }
       .menu{      
       display:flex;  
       justify-content:space-around;                
       order:1;       
-      width:100%  ;   
-         
+        
+      
                                                           
     } 
-    ul{
+     nav ul{
       display:flex;
-      list-style: none;
-      
+      align-items:center;
+      list-style: none;              
+      border-bottom:2px solid #f2f2f2;
+         
+       
       
     }
     
     .activite{
-      padding-left:30px;
+      
       color:black;
       font-weight: 400;
     }
     .hebergement{
-     color:#0065FC
+     color:#0065FC;
+     
+    }
+    .traitleft{
+      border-bottom: 2px solid #0065FC;
+      width:50%;
+      padding-bottom:25px;
+      align-items:flex-start;
+     
     }
 
     nav a {
       text-decoration: none;        
       
-    }         
-       
-      .traitright a:hover {
-      text-decoration:solid;
-      border-bottom:2px solid #0065FC;
-      padding-bottom:20px;      
-      color:#0065FC;
-     }
+    } 
+     .traitright{
+      
+      border-bottom: 2px solid transparent;
+      width :50%;
+      padding-bottom:25px;
+      align-items:flex-end;
+     }        
+       .traitright a:hover{        
+        border-bottom: 2px solid #0065FC;
+        width:100%;
+        padding-bottom:25px;
+       }
+      
      .registre{       
       font-weight:600;      
       text-decoration:none;
@@ -455,13 +471,19 @@
       justify-content: space-evenly;
       border-bottom:none;
     }
-    ul{
+    nav ul{
       align-items: center;
+      justify-content: space-evenly;
+      
     }
+     
+    
     .traitleft{
       border-top:2px solid #0065FC;
       padding-top:10px;
       padding:10px;
+      border-bottom:none;
+      width:25%
     }
     .traitleft :hover{
       border-top: 2px solid #0065FC;
@@ -479,7 +501,9 @@
       padding-top:10px;
      
     }
-         
+      .trait_lien{
+        border-bottom: none;
+      }  
     
     
 
@@ -717,7 +741,9 @@
       list-style: none;
       padding-right:20px;
     }
-    
+   nav ul{
+     justify-content: flex-end;
+   } 
     
    .registre{
     position:relative;     

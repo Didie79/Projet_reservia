@@ -27,15 +27,15 @@
       .menu{      
       display:flex;  
       justify-content:space-around;                
-      order:1; 
-      border-bottom:2px solid #0065FC;      
-      width:50%;   
+      order:1;       
+      width:100%  ;   
+         
                                                           
     } 
     ul{
       display:flex;
       list-style: none;
-      width:50%;
+      
       
     }
     
@@ -50,7 +50,7 @@
 
     nav a {
       text-decoration: none;        
-      padding-bottom:25px;
+      
     }         
        
       .traitright a:hover {
@@ -63,7 +63,7 @@
       font-weight:600;      
       text-decoration:none;
       color:#0065FC;
-      padding-right:10px;
+     
     }   
          
                         /*MAIN*/
@@ -435,7 +435,7 @@
       border-bottom:none;
       flex-direction:row; 
       flex-wrap: nowrap;
-      margin-top:10px;    
+         
                 
     }   
             
@@ -445,7 +445,9 @@
      }
    
      nav a {
-      text-decoration: none;        
+      text-decoration: none; 
+      padding-top:10px;
+      padding-bottom:10px;       
            
       
     }
@@ -457,14 +459,24 @@
       align-items: center;
     }
     .traitleft{
+      border-top:2px solid #0065FC;
+      padding-top:10px;
+      padding:10px;
+    }
+    .traitleft :hover{
       border-top: 2px solid #0065FC;
       padding-top:10px;      
       border-bottom:none;
     }
+    .traitright{
+      border-top:2px solid transparent;
+      padding-top:10px;
+      padding:10px;
+    }
     .traitright a:hover{
       border-top:2px solid #0065FC;
       border-bottom:none;
-      padding-top:20px;
+      padding-top:10px;
      
     }
          
@@ -701,8 +713,9 @@
    }
     .menu{
       justify-content: flex-end;
-      padding-right:50px;
+      width:50%;
       list-style: none;
+      padding-right:20px;
     }
     
     

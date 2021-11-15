@@ -1,9 +1,0 @@
-Bonjour,
-Le dossier transmis est basé sur l'ancienne version du P2 avant septembre 29/09/2021.
-
-Précision: Le site a été réalisé en mobile first.
-
-Ci joint le lien de la page du code sur Git.
--Le lien de la page du site en ligne.
-Les images des maquettes issus du modèle de Reservia sont inclus dans le dossier .
-

@@ -27,8 +27,7 @@
       display:flex;  
       justify-content:space-around;                
       order:1;       
-      width:100%;  
-      border-bottom:2px solid #f2f2f2
+      width:100%;        
                                                                    
     } 
     nav ul{
@@ -36,16 +35,11 @@
       justify-content:space-around;
       list-style: none;
       width:100%;
+      text-align:center;      
+      padding:0;
          
-     }
-    
-    .activite{
-    
-      color:black;
-      font-weight: 400;
-      border-bottom: 2px transparent;
-      padding:16px 100px;
-    }
+     }    
+       
     
     nav a {
       text-decoration: none;        
@@ -53,19 +47,34 @@
     }
           
        .hebergement{
-         border-bottom:2px solid #0065FC;
-         padding:16px 55px;
-         color:#0065FC
+       color:#0065FC;
        }
-       .traitleft :hover{
+
+       .activite{
+    
+        color:black;
+        font-weight:400;                 
+      }
+       .traitleft{
+         
+         width:50%;
+         text-align: center;
+         padding-bottom:16px;
          border-bottom:2px solid #0065FC;
        }
-      .traitright a:hover {
-      text-decoration:solid;
-      border-bottom:2px solid #0065FC;
-      padding-bottom:16px;      
-      color:#0065FC;
+       .traitright{
+         width:50%;
+         text-align:center;
+         padding-bottom:16px;
+         border-bottom: 2px solid #f2f2f2;
+       }
+      .traitright a:hover {      
+      
+      border-bottom:2px solid red;
+      padding-bottom: 16px;
       width:100%;
+
+      
      }
      .registre{       
       font-weight:600;      
@@ -74,6 +83,7 @@
       padding-right:5px;
      
     }   
+    
          
                         /*MAIN*/
                 /*titre de presentation */

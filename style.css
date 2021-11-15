@@ -13,72 +13,64 @@
        display:flex; 
        align-items:center;
        flex-wrap: wrap; 
-        justify-content: space-between;            
-        margin-bottom:30px;        
-        
+       justify-content: space-between;              
+        width:100%; 
+        margin:auto;
                             
     }
 
       #logo{                     
-              
+      padding:0 20px;         
        color:#0065FC;   
     }
       .menu{      
       display:flex;  
       justify-content:space-around;                
       order:1;       
-        
-      
-                                                          
+      width:100%;  
+     border-bottom:2px solid #f2f2f2
+                                                                   
     } 
-     nav ul{
+    nav ul{
       display:flex;
-      align-items:center;
-      list-style: none;              
-      border-bottom:2px solid #f2f2f2;
+      justify-content:space-around;
+      list-style: none;
+      width:100%;
          
-       
-      
-    }
+     }
     
     .activite{
-      
+    
       color:black;
       font-weight: 400;
+      padding-left:20px;
     }
-    .hebergement{
-     color:#0065FC;
-     
-    }
-    .traitleft{
-      border-bottom: 2px solid #0065FC;
-      width:50%;
-      padding-bottom:25px;
-      align-items:flex-start;
-     
-    }
-
+    
     nav a {
       text-decoration: none;        
       
-    } 
-     .traitright{
-      
-      border-bottom: 2px solid transparent;
-      width :50%;
-      padding-bottom:25px;
-      align-items:flex-end;
-     }        
-       .traitright a:hover{        
-        border-bottom: 2px solid #0065FC;
-        width:100%;
-        padding-bottom:25px;
+    }
+          
+       .hebergement{
+         border-bottom:2px solid #0065FC;
+         padding-bottom:20px;
+         color:#0065FC
        }
-      
+       .traitleft :hover{
+         border-bottom:2px solid #0065FC;
+       }
+      .traitright a:hover {
+      text-decoration:solid;
+      border-bottom:2px solid #0065FC;
+      padding-bottom:20px;      
+      color:#0065FC;
+      width:100%;
+     }
      .registre{       
       font-weight:600;      
       text-decoration:none;
       color:#0065FC;
+      padding-right:20px;
      
     }   
          
@@ -458,6 +450,7 @@
      .registre{
        order:1;
        position:relative;
+       align-self:center;
      }
    
      nav a {
@@ -473,17 +466,15 @@
     }
     nav ul{
       align-items: center;
-      justify-content: space-evenly;
-      
+
+    } .trait_lien{
+      border-bottom:none;
     }
-     
-    
+
     .traitleft{
       border-top:2px solid #0065FC;
       padding-top:10px;
       padding:10px;
-      border-bottom:none;
-      width:25%
     }
     .traitleft :hover{
       border-top: 2px solid #0065FC;
@@ -491,9 +482,10 @@
       border-bottom:none;
     }
     .traitright{
-      border-top:2px solid transparent;
+      border-top:none;
       padding-top:10px;
       padding:10px;
+      
     }
     .traitright a:hover{
       border-top:2px solid #0065FC;
@@ -501,9 +493,10 @@
       padding-top:10px;
      
     }
-      .trait_lien{
-        border-bottom: none;
-      }  
+    .hebergement{
+      border-bottom:none;
+    }
+         
     
     
 
@@ -543,7 +536,9 @@
       height:50px;
   }
            
-    
+    nav ul{
+      padding-bottom:none
+    }
 
                   /*SECTION MAIN */
                   /*les cartes pouplaires et hebergements*/ 
@@ -741,15 +736,22 @@
       list-style: none;
       padding-right:20px;
     }
-   nav ul{
-     justify-content: flex-end;
-   } 
+    
     
    .registre{
     position:relative;     
     padding-right:40px;
             
    }
+   .trait_lien{
+     justify-content: flex-end;
+     
+
+   }
+   .hebergement{
+     border-bottom:none
+     }
+   
                     /*presentation*/
      .title,.stitle{
                       margin-left:30px;

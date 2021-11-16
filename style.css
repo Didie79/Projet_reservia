@@ -71,8 +71,7 @@
          border-bottom: 2px solid #f2f2f2;
        }
        .traitright a:hover{      
-        padding:0 62px 16px;       
-        
+        padding:0 62px 16px;         
         border-bottom: 2px solid #0065FC;
         
        }
@@ -480,42 +479,30 @@
       align-items: center;
 
     } 
-    .trait_lien{
+    
+    .traitleft{      
       border-bottom:none;
-    }
-
-    .traitleft{
+      padding:0;
       width:25%;
-      border-top:2px solid #0065FC;      
-      padding:10px 0;
-      border-bottom:none;
-
     }
+     .hebergement{
+       border-top:2px solid #0065FC;
+       
+     }
     .traitright{
       
       border-bottom:none;
-      padding-bottom:none;
-      padding-top:19px;
-     
-    }
-        
-    .traitright a:hover{
-      border-top:2px solid #0065FC;
-      border-bottom:none;
-      padding-bottom:none;
-      padding:10px 20px 0;
-     
-    }
-    .hebergement{
-      border-bottom:none;
       padding:0;
+      width:25%;
+          
     }
-    .activite{
-      border-bottom:none;
-    }
-         
-    
-    
+    .traitright a:hover{
+      border-bottom:none;      
+      border-top:2px solid #0065FC;
+      padding:12px;
+    }        
+       
+       
 
               /*SECTION RECHERCHE*/
       form{      
@@ -613,7 +600,7 @@
   .A_propos,.Assistance,.Nos_hebergements{
     font-size: 14px;
   }
-  }
+}
  
                    /* VERSION TABLET (min 768px) */
        @media only screen and (min-width:768px){
@@ -669,6 +656,8 @@
       #activity{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
         width:100%;
       }
       .title_activity{
@@ -685,14 +674,8 @@
         width:100%;                
         
        }
-           
-               
-        #activity{
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          width:99%;
-        }
+                      
+       
         .card_hebergement{
           width:90%;
           margin-right:10px;
@@ -751,13 +734,13 @@
       justify-content: flex-end;
       width:50%;
       list-style: none;
-      padding-right:20px;
+      
     }
     
     
    .registre{
     position:relative;     
-    padding-right:40px;
+    margin-right:40px;
             
    }
    .nav_ul{
@@ -769,19 +752,18 @@
 
    }
    .traitleft{
+     padding:0;
+     width:20%;
      
-   padding-top:15px ; 
    }
-.traitright{
-  width:20%;
- 
-}
+   .hebergement{    
+     text-align:center;
+   }
+   
   .traitright a:hover{
-    padding:13px;
+    padding-top:10px;
   }
-   .activite{
-     padding:10px;
-  }
+ 
    
                     /*presentation*/
      .title,.stitle{

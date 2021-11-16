@@ -61,21 +61,22 @@
          text-align: center;
          padding-bottom:16px;
          border-bottom:2px solid #0065FC;
-       }
+       } 
+      
+
        .traitright{
          width:50%;
          text-align:center;
          padding-bottom:16px;
          border-bottom: 2px solid #f2f2f2;
        }
-      .traitright a:hover {      
+       .traitright a:hover{      
+        padding:0 62px 16px;       
+        
+        border-bottom: 2px solid #0065FC;
+        
+       }
       
-      border-bottom:2px solid red;
-      padding-bottom: 16px;
-      width:100%;
-
-      
-     }
      .registre{       
       font-weight:600;      
       text-decoration:none;
@@ -478,30 +479,31 @@
     nav ul{
       align-items: center;
 
-    } .trait_lien{
+    } 
+    .trait_lien{
       border-bottom:none;
     }
 
     .traitleft{
-      border-top:2px solid #0065FC;
-      padding-top:10px;
-      padding:10px;
-    }
-    .traitleft :hover{
-      border-top: 2px solid #0065FC;
-      padding-top:10px;      
+      width:25%;
+      border-top:2px solid #0065FC;      
+      padding:10px 0;
       border-bottom:none;
+
     }
     .traitright{
-      border-top:none;
-      padding-top:10px;
-      padding:10px;
       
+      border-bottom:none;
+      padding-bottom:none;
+      padding-top:19px;
+     
     }
+        
     .traitright a:hover{
       border-top:2px solid #0065FC;
       border-bottom:none;
-      padding-top:10px;
+      padding-bottom:none;
+      padding:10px 20px 0;
      
     }
     .hebergement{
@@ -509,7 +511,7 @@
       padding:0;
     }
     .activite{
-      padding:0;
+      border-bottom:none;
     }
          
     
@@ -521,7 +523,7 @@
         margin-left:10px;
   }  
   .fontbarre{
-    width:275px
+    width:275px;
   }
        button{
        border-radius: 0 20px 20px 0;
@@ -758,14 +760,28 @@
     padding-right:40px;
             
    }
+   .nav_ul{
+     align-items: baseline;
+   }
    .trait_lien{
      justify-content: flex-end;
      
 
    }
-   .hebergement{
-     border-bottom:none
-     }
+   .traitleft{
+     
+   padding-top:15px ; 
+   }
+.traitright{
+  width:20%;
+ 
+}
+  .traitright a:hover{
+    padding:13px;
+  }
+   .activite{
+     padding:10px;
+  }
    
                     /*presentation*/
      .title,.stitle{
